@@ -15,8 +15,8 @@ def users(request):
 
         if form.is_valid():
             form.save(commit=True)
-            return idex(request)
+            return index(request)
     else:
         print('ERROR FROM INVALID')
 
-return render(request,'appTwo/users.html,{'form':form})
+    return render(request,'appTwo/users.html',{'form':form})

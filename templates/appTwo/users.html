@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Users</title>
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   </head>
@@ -12,7 +12,7 @@
       <h1>Please sign up here!</h1>
       <form method="POST"></form>
       {{ form.as_p }}
-      {{ csrf_token %}}
+      {% csrf_token %}
       <input type="submit" class='btn btn-primary' value="Submit">
     </form>
     </div>
